@@ -28,5 +28,18 @@ git checkout -- <fichier>
 **Comment suivre (track) un dépôt distant et récupérer toutes les branches de ce dépôt ?**
 git fetch --all
 
+**Comment interrompre un rebase en cours si vous avez commis une erreur ?**
+git rebase --abort
+
+**Comment lister les commits qui vont être rebasés avant de lancer un rebase ?**
+git log master..ma-fonctionnalite
+
  **Comment supprimer une branche locale après l'avoir fusionnée dans master ?**
  git branch -d ma-fonctionnalite
+**Comment afficher la liste des branches actives et en cours de développement dans
+Giflow ?**
+git branch
+git branch -a
+git branch --show-current
+git branch -d nom_de_la_branche_hotfix
+git branch -D nom_de_la_branche_hotfix
